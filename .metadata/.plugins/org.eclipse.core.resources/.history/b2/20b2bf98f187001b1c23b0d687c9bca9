@@ -1,0 +1,15 @@
+package aspect;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class CacheAspect {
+
+	private Map<Long, Object> cache = new HashMap<>();
+	
+	@Pointcut("execution(public * chap07..*(long))")
+
+}
